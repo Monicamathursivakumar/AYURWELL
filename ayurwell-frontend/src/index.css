@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-sage-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-sage-300 rounded-full;
+}
+
+.card {
+  @apply bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-sage-100 dark:border-gray-700 p-5;
+}
+
+.btn-primary {
+  @apply bg-sage-600 hover:bg-sage-700 text-white px-4 py-2 rounded-xl transition-colors font-medium;
+}
+
+.btn-secondary {
+  @apply bg-turmeric-500 hover:bg-turmeric-600 text-white px-4 py-2 rounded-xl transition-colors font-medium;
+}
+
+.input-field {
+  @apply w-full px-3 py-2 rounded-xl border border-sage-200 dark:border-gray-600 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-sage-400;
+}
